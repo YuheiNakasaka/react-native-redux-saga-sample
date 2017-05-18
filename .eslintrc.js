@@ -13,6 +13,15 @@ module.exports = {
         ],
         "react/prefer-stateless-function": [
           0, { "ignorePureComponents": true}
+        ],
+        "no-console": [
+          "error", { allow: ["log", "warn", "error"] }
+        ],
+        "react/prop-types": [
+          0
+        ],
+        "react/no-array-index-key": [
+          0
         ]
     }
 };
