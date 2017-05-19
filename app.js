@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { TouchableHighlight, View, Text, StyleSheet } from 'react-native';
 
 import { connect } from 'react-redux';
@@ -58,6 +59,15 @@ const App = (props) => {
   );
 };
 
+App.propTypes = {
+  fetchData: PropTypes.func.isRequired,
+  appData: PropTypes.shape({
+    data: PropTypes.array.isRequired,
+    dataFetched: PropTypes.bool.isRequired,
+    isFetching: PropTypes.bool.isRequired,
+    error: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 function mapStateToProps(state) {
   return {

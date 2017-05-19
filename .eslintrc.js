@@ -17,10 +17,10 @@ module.exports = {
         "no-console": [
           "error", { allow: ["log", "warn", "error"] }
         ],
-        "react/prop-types": [
+        "react/no-array-index-key": [
           0
         ],
-        "react/no-array-index-key": [
+        "import/prefer-default-export": [
           0
         ]
     }
